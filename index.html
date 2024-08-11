@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment Page</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <script type="module" crossorigin src="/2024Week5HW/assets/main-5f4299d7.js"></script>
+  <link rel="stylesheet" href="/2024Week5HW/assets/main-5fc8622a.css">
+</head>
+
+<body>
+  <!-- 不知道怎麼改下拉選單右邊的icon -->
+  <!-- <span class="material-symbols-outlined text-success ms-2">
+                      keyboard_arrow_down
+                    </span> -->
+
+  <div class="d-flex">
+    <!-- 區塊 TIP https://bootstrap5.hexschool.com/docs/5.0/components/navbar/#nav -->
+<!-- vh-100 相對於視窗設定高度100% -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbox vh-100 py-3">
+    <!-- h-100 相對於父元素高度100% -->
+    <div class="container-fluid flex-column align-items-start px-0 h-100">
+        <!-- 相對於父元素寬度100% -->
+        <div class="w-100">
+            <a class="navbar-brand px-3 mb-3" href="#">
+                <img src="/2024Week5HW/assets/logo-ANSWER-5336fb45.svg" class="card-img-top" alt="logo" />
+            </a>
+            <!-- <div class="container-fluid flex-column align-items-start px-0" id="navbarNav"> -->
+            <ul class="navbar-nav flex-column ">
+                <li class="nav-item">
+                    <!-- 助教提示
+                    ===navbar部分
+                    使用 ejs 動態切換導覽列樣式
+                    < % - include('./layout/header', {page: "home"}); - % >
+                    ===html部分
+                    <li class="mb-4">
+                     <a class="link < % = page === 'home' ? 'active' : '' % >" href="./index.html">首頁</a>
+                    </li> -->
+                    <a class="nav-link fw-bold active border-start border-3
+                     " aria-current="page"
+                        href="#">
+                        <span class="material-symbols-outlined align-bottom mx-3">
+                            insert_chart
+                        </span> Dashboard</a>
+                </li>
+                <li class="nav-item ">
+                    <!-- border TIP https://bootstrap5.hexschool.com/docs/5.0/utilities/borders/#border -->
+                    <a class="nav-link fw-bold active border-start border-3 
+                    active border-success text-success " aria-current="page"
+                        href="index.html">
+                        <span class="material-symbols-outlined align-bottom mx-3">
+                            assignment
+                        </span> Assignment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold active border-start border-3
+                     " aria-current="page"
+                        href="admin.html">
+                        <span class="material-symbols-outlined align-bottom mx-3">
+                            group
+                        </span> Admin</a>
+                </li>
+            </ul>
+            <!-- </div> -->
+        </div>
+
+
+        <!-- 區塊 TIP https://bootstrap5.hexschool.com/docs/5.0/utilities/flex/#media-object -->
+        <div class="d-flex px-3">
+            <div class="flex-shrink-0">
+                <!-- border TIP https://bootstrap5.hexschool.com/docs/5.0/utilities/borders/#border-radius -->
+                <img src="/2024Week5HW/assets/andychen-f14fef59.jpeg" alt="andychen" width="48" height="48"
+                    class="rounded-circle object-fit-cover" />
+            </div>
+            <div class="flex-grow-1 ms-3">
+                <p class="fw-bold">Andy Chen</p>
+                <a href="mailto:andy0401@mail.com">andy0401@mail.com</a>
+            </div>
+        </div>
+
+
+    </div>
+
+</nav>      <div class="d-flex flex-column vh-100" style="width:calc(100% - 296px)">
+        <div class="container-fluid px-4">
+          <header class="py-4">
+            <div class="">
+              <div class="d-flex align-items-center">
+                <h1 class="h4 fw-bolder pe-5">Assignment</h1>
+
+                <div class="btn-group">
+                  <button type="button" class="btn dropdown-toggle d-flex align-items-center fw-bold pe-3"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    All Courses
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+
+                <div class="ms-auto">
+                  <a href="#">
+                    <span class="material-symbols-outlined ps-3">
+                      search
+                    </span></a>
+                  <a href="#"><span class="material-symbols-outlined ps-3">
+                      notifications_active
+                    </span></a>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <main class="">
+            <div class="row">
+
+              <!-- 左邊 -->
+              <div class="col-4">
+                <div class="btn-group">
+                  <button type="button" class="btn dropdown-toggle d-flex align-items-center fw-bold ps-0 pe-3"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    All (4)
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action bg-light" aria-current="true">
+                    <div class="d-flex w-100 small-text justify-content-between ">
+                      <sapn class="small-text mb-1">Chapter Assignment 2</sapn>
+                      <sapn>4 hrs ago</sapn>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                      <h6 class="col-9 mb-1 text-dark fw-bold  text-truncate">Please check this file for me, thanks!
+                      </h6>
+                      <span class="col-3 small-text text-gray text-end">Emily Wang</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <!-- 右邊 -->
+              <div class="col-8 position-relative">
+                <div class="d-block text-end mt-1 py-2 small-text">2 comments</div>
+                <div class="card mb-1">
+                  <div class="card-header">
+                    <div class="row">
+                      <div class="col-11">
+                        <div class="d-flex flex-column w-100 justify-content-between">
+                          <sapn class="mb-1 small-text">Chapter Assignment 2 / HTML&CSS</sapn>
+                          <h5 class="h6 text-dark fw-bold">Please check this file for me, thanks!</h5>
+                        </div>
+                      </div>
+                      <div class="col-1 d-flex align-items-center">
+                        <span class="material-symbols-outlined">
+                          more_vert
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <!-- 問題 -->
+                    <div class="row">
+                      <div class="d-flex align-items-start mb-3 ">
+                        <div class="user-pic">
+                          <img src="/2024Week5HW/assets/emilywang-cc5a821b.jpeg" alt="" width="40px" height="40px"
+                            class="rounded-circle object-fit-cover d-block">
+                        </div>
+                        <div class="ms-3 pb-3 border-bottom ">
+                          <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-column align-items-start">
+                              <span class="fw-bold">Emily Wang</span>
+                              <span class="small-text text-secondary p-0">10:38 AM (4 hours ago)</span>
+                            </div>
+                            <div class="ms-auto">
+                              <!-- 預留空間 -->
+                            </div>
+                          </div>
+
+                          <p class="pt-3">
+                            Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in
+                            the
+                            following code the height of the div is bigger than the height of the <code>img </code>?
+                            There is a gap
+                            below
+                            the image, but it doesn’t seems to be a padding/margin. <br>What is the gap or extra space
+                            below
+                            image?
+                          </p>
+
+                          <a href="#" class="btn border border-1 bg-light d-flex px-3 py-2 fw-bold mt-3 d-inline-flex">
+                            <span class="material-symbols-outlined pe-2 align-items-center">
+                              attach_file
+                            </span>
+                            HW-2-David.zip</a>
+
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 下面的回覆 -->
+                    <div class="row">
+                      <div class=" ">
+                        <div class="d-flex align-items-start">
+                          <div class="user-pic">
+                            <img src="/2024Week5HW/assets/andychen-f14fef59.jpeg" alt="" width="40px" height="40px"
+                              class="rounded-circle object-fit-cover d-block">
+                          </div>
+                          <div class="ms-3  ">
+                            <div class="d-flex justify-content-between">
+                              <div class="d-flex flex-column align-items-start">
+                                <span class="fw-bold">Andy Chen (You)</span>
+                                <span class="small-text text-secondary p-0">13:24 AM (1 hours ago)</span>
+                              </div>
+                              <div class="ms-auto">
+                                <span class="material-symbols-outlined icon-unfilled m-2">
+                                  star
+                                </span>
+                                <span class="material-symbols-outlined m-2">
+                                  edit
+                                </span>
+                              </div>
+                            </div>
+                            <div class="pt-3">
+                              <p>
+                                Hi David, by default, an image is rendered inline, like a letter so it sits on the same
+                                line
+                                that a, b, c and d sit on. There is space below that line for the descenders you find on
+                                letters like g, j, p and q.
+                              </p>
+                              <p> You can: </p>
+                              <ul>
+                                <li>adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g.
+                                  the
+                                  <code>middle</code> ) or
+                                </li>
+                                <li>change the <code>display</code> so it isn’t inline.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+
+                </div>
+
+
+
+                <!-- 下面切換左右、回覆按鈕 -->
+                <div class="d-flex w-100 justify-content-between pb-3 pt-3">
+                  <div class="d-flex">
+                    <span class="material-symbols-outlined m-2">
+                      keyboard_arrow_left
+                    </span>
+                    <span class="material-symbols-outlined m-2">
+                      keyboard_arrow_right
+                    </span>
+                  </div>
+                  <div class="d-flex">
+                    <button type="button" class="btn btn-outline-success mx-2 px-5">Mark as read</button>
+                    <button type="button" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                      aria-expanded="false" aria-controls="collapseExample"
+                      class="btn btn-success mx-2 px-5">Reply</button>
+                  </div>
+                </div>
+
+
+                <!-- 輸入回覆區塊 -->
+                <div class="collapse position-absolute bottom-0 end-0 w-100 " id="collapseExample">
+                  <div class="card">
+                    <div class="card-header">
+                      按鈕們
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <textarea class="form-control border-0" placeholder="Reply an answer…" id="floatingTextarea2"
+                            rows="8"></textarea>
+                        </div>
+                        <div class="col-12 d-flex justify-content-end">
+                          <button type="button" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="false" aria-controls="collapseExample"
+                            class="btn btn-success mx-2 px-5">Reply</button>
+                          <button type="button" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="false" aria-controls="collapseExample"
+                            class="btn btn-success mx-2 px-5">Reply</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+  </div>
+
+
+  <!-- <h1 class="index-title">我是首頁</h1>
+
+    
+
+    <footer class="footer">我是 footer</footer> -->
+
+  
+</body>
+
+</html>
