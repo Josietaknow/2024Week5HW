@@ -9,8 +9,8 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-  <script type="module" crossorigin src="/2024Week5HW/assets/main-5f4299d7.js"></script>
-  <link rel="stylesheet" href="/2024Week5HW/assets/main-5fc8622a.css">
+  <script type="module" crossorigin src="/2024Week5HW/assets/main-10bbaa87.js"></script>
+  <link rel="stylesheet" href="/2024Week5HW/assets/main-2d38e0b2.css">
 </head>
 
 <body>
@@ -32,7 +32,7 @@
             </a>
             <!-- <div class="container-fluid flex-column align-items-start px-0" id="navbarNav"> -->
             <ul class="navbar-nav flex-column ">
-                <li class="nav-item">
+                <li class="nav-item mb-1">
                     <!-- 助教提示
                     ===navbar部分
                     使用 ejs 動態切換導覽列樣式
@@ -48,7 +48,16 @@
                             insert_chart
                         </span> Dashboard</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item mb-1">
+                    <a class="nav-link fw-bold active border-start border-3 
+                     " aria-current="page"
+                        href="#">
+                        <span class="material-symbols-outlined align-bottom mx-3">
+                            forum
+                        </span> Question</a>
+                </li>
+
+                <li class="nav-item mb-1">
                     <!-- border TIP https://bootstrap5.hexschool.com/docs/5.0/utilities/borders/#border -->
                     <a class="nav-link fw-bold active border-start border-3 
                     active border-success text-success " aria-current="page"
@@ -57,7 +66,15 @@
                             assignment
                         </span> Assignment</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mb-1">
+                    <a class="nav-link fw-bold active border-start border-3 
+                     " aria-current="page"
+                        href="#">
+                        <span class="material-symbols-outlined align-bottom mx-3">
+                            video_library
+                        </span> Course</a>
+                </li>
+                <li class="nav-item mb-1">
                     <a class="nav-link fw-bold active border-start border-3
                      " aria-current="page"
                         href="admin.html">
@@ -65,13 +82,21 @@
                             group
                         </span> Admin</a>
                 </li>
+                <li class="nav-item mb-1">
+                    <a class="nav-link fw-bold active border-start border-3 
+                     " aria-current="page"
+                        href="#">
+                        <span class="material-symbols-outlined align-bottom mx-3">
+                            settings
+                        </span> Settings</a>
+                </li>
             </ul>
             <!-- </div> -->
         </div>
 
 
         <!-- 區塊 TIP https://bootstrap5.hexschool.com/docs/5.0/utilities/flex/#media-object -->
-        <div class="d-flex px-3">
+        <div class="d-flex ps-4">
             <div class="flex-shrink-0">
                 <!-- border TIP https://bootstrap5.hexschool.com/docs/5.0/utilities/borders/#border-radius -->
                 <img src="/2024Week5HW/assets/andychen-f14fef59.jpeg" alt="andychen" width="48" height="48"
@@ -79,7 +104,7 @@
             </div>
             <div class="flex-grow-1 ms-3">
                 <p class="fw-bold">Andy Chen</p>
-                <a href="mailto:andy0401@mail.com">andy0401@mail.com</a>
+                <a href="mailto:andy0401@mail.com" class="text-black-50 " style="font-size:14px">andy0401@mail.com</a>
             </div>
         </div>
 
@@ -96,12 +121,10 @@
                 <div class="btn-group">
                   <button type="button" class="btn dropdown-toggle d-flex align-items-center fw-bold pe-3"
                     data-bs-toggle="dropdown" aria-expanded="false">
-                    All Courses
+                    <span class="pe-2">All Courses</span>
                   </button>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#">HTML&CSS</a></li>
                   </ul>
                 </div>
 
@@ -126,183 +149,261 @@
                 <div class="btn-group">
                   <button type="button" class="btn dropdown-toggle d-flex align-items-center fw-bold ps-0 pe-3"
                     data-bs-toggle="dropdown" aria-expanded="false">
-                    All (4)
+                    <span class="pe-2">All (4)</span>
                   </button>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#">Chapter Assignment 1</a></li>
+                    <li><a class="dropdown-item" href="#">Chapter Assignment 2</a></li>
+                    <li><a class="dropdown-item" href="#">Final Assignment</a></li>
                   </ul>
                 </div>
                 <div class="list-group">
                   <a href="#" class="list-group-item list-group-item-action bg-light" aria-current="true">
                     <div class="d-flex w-100 small-text justify-content-between ">
-                      <sapn class="small-text mb-1">Chapter Assignment 2</sapn>
+                      <sapn class="small-text mb-1">Chapter Assignment 1</sapn>
                       <sapn>4 hrs ago</sapn>
                     </div>
                     <div class="d-flex w-100 justify-content-between">
                       <h6 class="col-9 mb-1 text-dark fw-bold  text-truncate">Please check this file for me, thanks!
                       </h6>
-                      <span class="col-3 small-text text-gray text-end">Emily Wang</span>
+                      <span class="col-3 small-text text-black-50 text-end">Emily Wang</span>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 small-text justify-content-between ">
+                      <sapn class="small-text mb-1">Chapter Assignment 2</sapn>
+                      <sapn>12 hrs ago</sapn>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                      <h6 class="col-9 mb-1 text-dark fw-bold  text-truncate">My Homework
+                      </h6>
+                      <span class="col-3 small-text text-black-50 text-end">David Xu</span>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 small-text justify-content-between ">
+                      <sapn class="small-text mb-1">Final Assignment</sapn>
+                      <sapn>18 hrs ago</sapn>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                      <h6 class="col-9 mb-1 text-dark fw-bold  text-truncate">Have a problem with this page
+                      </h6>
+                      <span class="col-3 small-text text-black-50 text-end">Tony Wei</span>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 small-text justify-content-between ">
+                      <sapn class="small-text mb-1">Final Assignment</sapn>
+                      <sapn>19 hrs ago</sapn>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between">
+                      <h6 class="col-9 mb-1 text-dark fw-bold  text-truncate">Did I do it right?
+                      </h6>
+                      <span class="col-3 small-text text-black-50 text-end">Christina Lin</span>
                     </div>
                   </a>
                 </div>
               </div>
 
               <!-- 右邊 -->
-              <div class="col-8 position-relative">
-                <div class="d-block text-end mt-1 py-2 small-text">2 comments</div>
-                <div class="card mb-1">
-                  <div class="card-header">
-                    <div class="row">
-                      <div class="col-11">
-                        <div class="d-flex flex-column w-100 justify-content-between">
-                          <sapn class="mb-1 small-text">Chapter Assignment 2 / HTML&CSS</sapn>
-                          <h5 class="h6 text-dark fw-bold">Please check this file for me, thanks!</h5>
-                        </div>
-                      </div>
-                      <div class="col-1 d-flex align-items-center">
-                        <span class="material-symbols-outlined">
-                          more_vert
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <!-- 問題 -->
-                    <div class="row">
-                      <div class="d-flex align-items-start mb-3 ">
-                        <div class="user-pic">
-                          <img src="/2024Week5HW/assets/emilywang-cc5a821b.jpeg" alt="" width="40px" height="40px"
-                            class="rounded-circle object-fit-cover d-block">
-                        </div>
-                        <div class="ms-3 pb-3 border-bottom ">
-                          <div class="d-flex justify-content-between">
-                            <div class="d-flex flex-column align-items-start">
-                              <span class="fw-bold">Emily Wang</span>
-                              <span class="small-text text-secondary p-0">10:38 AM (4 hours ago)</span>
-                            </div>
-                            <div class="ms-auto">
-                              <!-- 預留空間 -->
-                            </div>
-                          </div>
-
-                          <p class="pt-3">
-                            Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in
-                            the
-                            following code the height of the div is bigger than the height of the <code>img </code>?
-                            There is a gap
-                            below
-                            the image, but it doesn’t seems to be a padding/margin. <br>What is the gap or extra space
-                            below
-                            image?
-                          </p>
-
-                          <a href="#" class="btn border border-1 bg-light d-flex px-3 py-2 fw-bold mt-3 d-inline-flex">
-                            <span class="material-symbols-outlined pe-2 align-items-center">
-                              attach_file
-                            </span>
-                            HW-2-David.zip</a>
-
-                        </div>
-                      </div>
-                    </div>
-                    <!-- 下面的回覆 -->
-                    <div class="row">
-                      <div class=" ">
-                        <div class="d-flex align-items-start">
-                          <div class="user-pic">
-                            <img src="/2024Week5HW/assets/andychen-f14fef59.jpeg" alt="" width="40px" height="40px"
-                              class="rounded-circle object-fit-cover d-block">
-                          </div>
-                          <div class="ms-3  ">
-                            <div class="d-flex justify-content-between">
-                              <div class="d-flex flex-column align-items-start">
-                                <span class="fw-bold">Andy Chen (You)</span>
-                                <span class="small-text text-secondary p-0">13:24 AM (1 hours ago)</span>
-                              </div>
-                              <div class="ms-auto">
-                                <span class="material-symbols-outlined icon-unfilled m-2">
-                                  star
-                                </span>
-                                <span class="material-symbols-outlined m-2">
-                                  edit
-                                </span>
-                              </div>
-                            </div>
-                            <div class="pt-3">
-                              <p>
-                                Hi David, by default, an image is rendered inline, like a letter so it sits on the same
-                                line
-                                that a, b, c and d sit on. There is space below that line for the descenders you find on
-                                letters like g, j, p and q.
-                              </p>
-                              <p> You can: </p>
-                              <ul>
-                                <li>adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g.
-                                  the
-                                  <code>middle</code> ) or
-                                </li>
-                                <li>change the <code>display</code> so it isn’t inline.</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-
-
-                </div>
-
-
-
-                <!-- 下面切換左右、回覆按鈕 -->
-                <div class="d-flex w-100 justify-content-between pb-3 pt-3">
-                  <div class="d-flex">
-                    <span class="material-symbols-outlined m-2">
-                      keyboard_arrow_left
-                    </span>
-                    <span class="material-symbols-outlined m-2">
-                      keyboard_arrow_right
-                    </span>
-                  </div>
-                  <div class="d-flex">
-                    <button type="button" class="btn btn-outline-success mx-2 px-5">Mark as read</button>
-                    <button type="button" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                      aria-expanded="false" aria-controls="collapseExample"
-                      class="btn btn-success mx-2 px-5">Reply</button>
-                  </div>
-                </div>
-
-
-                <!-- 輸入回覆區塊 -->
-                <div class="collapse position-absolute bottom-0 end-0 w-100 " id="collapseExample">
-                  <div class="card">
+              <div class="col-8">
+                <!--Notion助教絕佳服務 
+                **Q：另外，我打開的 card 為什麼左右邊並沒有完美蓋上這點，我實在理解不出來原因，想請助教指點**
+                A：因為[這裡](https://github.com/Josietaknow/2024Week5HW/blob/a754f93913ae454b91ec7efe2027e125a6acd8e2/pages/index.html#L86)定位的父層 `
+                .col-8` 有左右 12px 的 `padding`，可以在 `.collapse` 這層設定 `padding`，
+                或是在 `.col-8` 的裡面再多加一層容器把定位寫在這 -->
+                <div class="position-relative">
+                  <div class="d-block text-end mt-1 py-2 small-text">2 comments</div>
+                  <div class="card mb-1">
                     <div class="card-header">
-                      按鈕們
+                      <div class="row">
+                        <div class="col-11">
+                          <div class="d-flex flex-column w-100 justify-content-between">
+                            <sapn class="mb-1 small-text">Chapter Assignment 2 / HTML&CSS</sapn>
+                            <h5 class="h6 text-dark fw-bold">Please check this file for me, thanks!</h5>
+                          </div>
+                        </div>
+                        <div class="col-1 d-flex align-items-center">
+                          <a href="#">
+                            <span class="material-symbols-outlined">
+                              more_vert
+                            </span></a>
+                        </div>
+                      </div>
                     </div>
                     <div class="card-body">
+                      <!-- 問題 -->
                       <div class="row">
-                        <div class="col-12">
-                          <textarea class="form-control border-0" placeholder="Reply an answer…" id="floatingTextarea2"
-                            rows="8"></textarea>
+                        <div class="d-flex align-items-start mb-3 ">
+                          <div class="user-pic">
+                            <img src="/2024Week5HW/assets/emilywang-cc5a821b.jpeg" alt="" width="40px" height="40px"
+                              class="rounded-circle object-fit-cover d-block">
+                          </div>
+                          <div class="ms-3 pb-3 border-bottom ">
+                            <div class="d-flex justify-content-between">
+                              <div class="d-flex flex-column align-items-start">
+                                <span class="fw-bold">Emily Wang</span>
+                                <span class="small-text text-secondary p-0">10:38 AM (4 hours ago)</span>
+                              </div>
+                              <div class="ms-auto">
+                                <!-- 預留空間 -->
+                              </div>
+                            </div>
+
+                            <p class="pt-3">
+                              Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why
+                              in
+                              the
+                              following code the height of the div is bigger than the height of the <code>img </code>?
+                              There is a gap
+                              below
+                              the image, but it doesn’t seems to be a padding/margin. <br>What is the gap or extra space
+                              below
+                              image?
+                            </p>
+
+                            <a href="#"
+                              class="btn border border-1 bg-light d-flex px-3 py-2 fw-bold mt-3 d-inline-flex">
+                              <span class="material-symbols-outlined pe-2 align-items-center">
+                                attach_file
+                              </span>
+                              HW-2-David.zip</a>
+
+                          </div>
                         </div>
-                        <div class="col-12 d-flex justify-content-end">
-                          <button type="button" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                            aria-expanded="false" aria-controls="collapseExample"
-                            class="btn btn-success mx-2 px-5">Reply</button>
-                          <button type="button" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                            aria-expanded="false" aria-controls="collapseExample"
-                            class="btn btn-success mx-2 px-5">Reply</button>
+                      </div>
+                      <!-- 下面的回覆 -->
+                      <div class="row">
+                        <div class=" ">
+                          <div class="d-flex align-items-start">
+                            <div class="user-pic">
+                              <img src="/2024Week5HW/assets/andychen-f14fef59.jpeg" alt="" width="40px" height="40px"
+                                class="rounded-circle object-fit-cover d-block">
+                            </div>
+                            <div class="ms-3  ">
+                              <div class="d-flex justify-content-between">
+                                <div class="d-flex flex-column align-items-start">
+                                  <span class="fw-bold">Andy Chen (You)</span>
+                                  <span class="small-text text-secondary p-0">13:24 AM (1 hours ago)</span>
+                                </div>
+                                <div class="ms-auto">
+                                  <a href="#">
+                                    <span class="material-symbols-outlined icon-unfilled m-2">
+                                      star
+                                    </span></a> <a href="#">
+                                    <span class="material-symbols-outlined m-2">
+                                      edit
+                                    </span></a>
+                                </div>
+                              </div>
+                              <div class="pt-3">
+                                <p>
+                                  Hi David, by default, an image is rendered inline, like a letter so it sits on the
+                                  same
+                                  line
+                                  that a, b, c and d sit on. There is space below that line for the descenders you find
+                                  on
+                                  letters like g, j, p and q.
+                                </p>
+                                <p> You can: </p>
+                                <ul>
+                                  <li>adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g.
+                                    the
+                                    <code>middle</code> ) or
+                                  </li>
+                                  <li>change the <code>display</code> so it isn’t inline.</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+
+
+                  <!-- 下面切換左右、回覆按鈕 -->
+                  <div class="d-flex w-100 justify-content-between pb-3 pt-3">
+                    <div class="d-flex">
+                      <span class="material-symbols-outlined m-2">
+                        keyboard_arrow_left
+                      </span>
+                      <span class="material-symbols-outlined m-2">
+                        keyboard_arrow_right
+                      </span>
+                    </div>
+                    <div class="d-flex">
+                      <button type="button" class="btn btn-outline-success mx-2 px-5">Mark as read</button>
+                      <button type="button" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample"
+                        class="btn btn-success mx-2 px-5">Reply</button>
+                    </div>
+                  </div>
+
+
+                  <!-- 輸入回覆區塊 -->
+                  <div class="collapse position-absolute bottom-0 end-0 w-100 " id="collapseExample">
+                    <div class="card">
+                      <div class="card-header">
+                        <ul class="editor d-flex flex-colum align-items-center m-0 ps-0">
+                          <li>
+                            <div>
+                              <button type="button" class="btn border-0 dropdown-toggle fw-bold"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="pe-2">Body Text</span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Normal</a></li>
+                                <li><a class="dropdown-item fw-bold" href="#">bold</a></li>
+                                <li><a class="dropdown-item fw-bolder" href="#">bolder</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li><a href=""><span class="material-symbols-outlined">
+                                format_bold
+                              </span></a></li>
+                          <li><a href=""><span class="material-symbols-outlined">
+                                format_italic
+                              </span></a></li>
+                          <li><a href=""><span class="material-symbols-outlined">
+                                format_list_bulleted
+                              </span></a></li>
+                          <li><a href=""><span class="material-symbols-outlined">
+                                format_list_numbered
+                              </span></a></li>
+                          <li><a href=""><span class="material-symbols-outlined">
+                                image
+                              </span></a></li>
+                          <li><a href=""><span class="material-symbols-outlined">
+                                link
+                              </span></a></li>
+                          <li><a href=""><span class="material-symbols-outlined">
+                                code
+                              </span></a></li>
+                        </ul>
+                      </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-12">
+                            <textarea class="form-control border-0" placeholder="Reply an answer…"
+                              id="floatingTextarea2" rows="7"></textarea>
+                          </div>
+                          <div class="col-12 d-flex justify-content-end pt-2">
+                            <button type="button" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                              aria-expanded="false" aria-controls="collapseExample"
+                              class="btn btn-outline-success mx-2 px-5">Cancel</button>
+                            <button type="button" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                              aria-expanded="false" aria-controls="collapseExample"
+                              class="btn btn-success mx-2 px-5">Reply</button>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </main>
@@ -311,11 +412,6 @@
   </div>
 
 
-  <!-- <h1 class="index-title">我是首頁</h1>
-
-    
-
-    <footer class="footer">我是 footer</footer> -->
 
   
 </body>
