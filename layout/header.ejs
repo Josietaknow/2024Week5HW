@@ -10,7 +10,7 @@
             </a>
             <!-- <div class="container-fluid flex-column align-items-start px-0" id="navbarNav"> -->
             <ul class="navbar-nav flex-column ">
-                <li class="nav-item">
+                <li class="nav-item mb-1">
                     <!-- 助教提示
                     ===navbar部分
                     使用 ejs 動態切換導覽列樣式
@@ -26,7 +26,16 @@
                             insert_chart
                         </span> Dashboard</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item mb-1">
+                    <a class="nav-link fw-bold active border-start border-3 
+                    <%= page === 'question' ? 'active border-success text-success' : '' %> " aria-current="page"
+                        href="#">
+                        <span class="material-symbols-outlined align-bottom mx-3">
+                            forum
+                        </span> Question</a>
+                </li>
+
+                <li class="nav-item mb-1">
                     <!-- border TIP https://bootstrap5.hexschool.com/docs/5.0/utilities/borders/#border -->
                     <a class="nav-link fw-bold active border-start border-3 
                     <%= page === 'assignment' ? 'active border-success text-success' : '' %> " aria-current="page"
@@ -35,7 +44,15 @@
                             assignment
                         </span> Assignment</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mb-1">
+                    <a class="nav-link fw-bold active border-start border-3 
+                    <%= page === 'question' ? 'active border-success text-success' : '' %> " aria-current="page"
+                        href="#">
+                        <span class="material-symbols-outlined align-bottom mx-3">
+                            video_library
+                        </span> Course</a>
+                </li>
+                <li class="nav-item mb-1">
                     <a class="nav-link fw-bold active border-start border-3
                     <%= page === 'admin' ? 'active border-success text-success' : '' %> " aria-current="page"
                         href="admin.html">
@@ -43,13 +60,21 @@
                             group
                         </span> Admin</a>
                 </li>
+                <li class="nav-item mb-1">
+                    <a class="nav-link fw-bold active border-start border-3 
+                    <%= page === 'question' ? 'active border-success text-success' : '' %> " aria-current="page"
+                        href="#">
+                        <span class="material-symbols-outlined align-bottom mx-3">
+                            settings
+                        </span> Settings</a>
+                </li>
             </ul>
             <!-- </div> -->
         </div>
 
 
         <!-- 區塊 TIP https://bootstrap5.hexschool.com/docs/5.0/utilities/flex/#media-object -->
-        <div class="d-flex px-3">
+        <div class="d-flex ps-4">
             <div class="flex-shrink-0">
                 <!-- border TIP https://bootstrap5.hexschool.com/docs/5.0/utilities/borders/#border-radius -->
                 <img src="../assets/images/andychen.jpeg" alt="andychen" width="48" height="48"
@@ -57,7 +82,7 @@
             </div>
             <div class="flex-grow-1 ms-3">
                 <p class="fw-bold">Andy Chen</p>
-                <a href="mailto:andy0401@mail.com">andy0401@mail.com</a>
+                <a href="mailto:andy0401@mail.com" class="text-black-50 " style="font-size:14px">andy0401@mail.com</a>
             </div>
         </div>
 
