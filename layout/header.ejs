@@ -1,0 +1,67 @@
+<!-- 區塊 TIP https://bootstrap5.hexschool.com/docs/5.0/components/navbar/#nav -->
+<!-- vh-100 相對於視窗設定高度100% -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbox vh-100 py-3">
+    <!-- h-100 相對於父元素高度100% -->
+    <div class="container-fluid flex-column align-items-start px-0 h-100">
+        <!-- 相對於父元素寬度100% -->
+        <div class="w-100">
+            <a class="navbar-brand px-3 mb-3" href="#">
+                <img src="../assets/images/logo-ANSWER.svg" class="card-img-top" alt="logo" />
+            </a>
+            <!-- <div class="container-fluid flex-column align-items-start px-0" id="navbarNav"> -->
+            <ul class="navbar-nav flex-column ">
+                <li class="nav-item">
+                    <!-- 助教提示
+                    ===navbar部分
+                    使用 ejs 動態切換導覽列樣式
+                    < % - include('./layout/header', {page: "home"}); - % >
+                    ===html部分
+                    <li class="mb-4">
+                     <a class="link < % = page === 'home' ? 'active' : '' % >" href="./index.html">首頁</a>
+                    </li> -->
+                    <a class="nav-link fw-bold active border-start border-3
+                    <%= page === 'Dashboard' ? 'active border-success text-success' : '' %> " aria-current="page"
+                        href="#">
+                        <span class="material-symbols-outlined align-bottom mx-3">
+                            insert_chart
+                        </span> Dashboard</a>
+                </li>
+                <li class="nav-item ">
+                    <!-- border TIP https://bootstrap5.hexschool.com/docs/5.0/utilities/borders/#border -->
+                    <a class="nav-link fw-bold active border-start border-3 
+                    <%= page === 'assignment' ? 'active border-success text-success' : '' %> " aria-current="page"
+                        href="index.html">
+                        <span class="material-symbols-outlined align-bottom mx-3">
+                            assignment
+                        </span> Assignment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold active border-start border-3
+                    <%= page === 'admin' ? 'active border-success text-success' : '' %> " aria-current="page"
+                        href="admin.html">
+                        <span class="material-symbols-outlined align-bottom mx-3">
+                            group
+                        </span> Admin</a>
+                </li>
+            </ul>
+            <!-- </div> -->
+        </div>
+
+
+        <!-- 區塊 TIP https://bootstrap5.hexschool.com/docs/5.0/utilities/flex/#media-object -->
+        <div class="d-flex px-3">
+            <div class="flex-shrink-0">
+                <!-- border TIP https://bootstrap5.hexschool.com/docs/5.0/utilities/borders/#border-radius -->
+                <img src="../assets/images/andychen.jpeg" alt="andychen" width="48" height="48"
+                    class="rounded-circle object-fit-cover" />
+            </div>
+            <div class="flex-grow-1 ms-3">
+                <p class="fw-bold">Andy Chen</p>
+                <a href="mailto:andy0401@mail.com">andy0401@mail.com</a>
+            </div>
+        </div>
+
+
+    </div>
+
+</nav>
